@@ -1,8 +1,4 @@
-# Episode 6: Data Types in Python
-
-# Building on the previous episode about variables, let's explore the different types of data those variables can hold.
-# Python has several built-in data types. We'll cover the most common ones here with simple examples.
-# We'll use the type() function to show the data type of each variable.
+# Episode 6: Basic Data Types in Python
 
 # Section 1: Numeric Types
 
@@ -29,6 +25,10 @@ my_float = 3.14
 print("Float example:", my_float)
 print("Type:", type(my_float))
 
+# Floats can be in exponential notation too
+my_float = 1.23e-4 # 1.23 * 10^-4 or 0.000123
+print("Float in exponential notation:", my_float)
+
 # Section 2: Strings (str): Text data, enclosed in single or double quotes.
 my_string = "Hello, Python!"
 print("String example:", my_string)
@@ -43,8 +43,3 @@ is_true = True
 is_false = False
 print("Boolean True:", is_true)
 print("Type:", type(is_true))
-
-# Section 4: Lists: Ordered, mutable collections of items (can be mixed types).
-my_list = [1, "apple", 3.5, True]
-print("List example:", my_list)
-print("Type:", type(my_list))
