@@ -53,36 +53,8 @@ if is_even(4):
     print("4 is even")
 else:
     print("4 is odd")
-
-# Section 3: Multiple Return Values
-
-# Function that returns multiple values
-def get_name_and_age():
-    name = "Alice"
-    age = 25
-    return name, age
-
-# Unpacking multiple return values
-person_name, person_age = get_name_and_age()
-print(f"Name: {person_name}, Age: {person_age}")
-
-# Function that returns a list
-def get_fruits():
-    return ["apple", "banana", "orange"]
-
-# Using the returned list
-fruits = get_fruits()
-print(f"Fruits: {fruits}")
-
-# Function that returns a tuple
-def get_coordinates():
-    return (10, 20)
-
-# Using the returned coordinates
-x, y = get_coordinates()
-print(f"Coordinates: ({x}, {y})")
-
-# Section 4: Conditional Returns
+ 
+# Section 3: Conditional Returns
 
 # Function with conditional returns
 def get_grade(score):
@@ -117,7 +89,7 @@ print(f"5 is {process_number(5)}")
 print(f"-3 is {process_number(-3)}")
 print(f"0 is {process_number(0)}")
 
-# Section 5: Return Values with Lists
+# Section 4: Return Values with Lists
 
 # Function that returns a modified list
 def double_numbers(numbers):
@@ -146,7 +118,7 @@ evens = get_even_numbers(numbers)
 print(f"All numbers: {numbers}")
 print(f"Even numbers: {evens}")
 
-# Section 6: Return Values in Calculations
+# Section 5: Return Values in Calculations
 
 # Function that calculates area of a circle
 def calculate_circle_area(radius):
@@ -158,18 +130,8 @@ def calculate_circle_area(radius):
 radius = 5
 area = calculate_circle_area(radius)
 print(f"Circle with radius {radius} has area: {area}")
-
-# Function that calculates multiple values
-def calculate_rectangle(length, width):
-    area = length * width
-    perimeter = 2 * (length + width)
-    return area, perimeter
-
-# Using multiple return values
-rect_area, rect_perimeter = calculate_rectangle(10, 5)
-print(f"Rectangle 10x5: Area={rect_area}, Perimeter={rect_perimeter}")
-
-# Section 7: Practical Exercise
+ 
+# Section 6: Practical Exercise
 
 ############
 ## Exercise: Create a temperature converter with return values
