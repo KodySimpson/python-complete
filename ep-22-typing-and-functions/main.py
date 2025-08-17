@@ -3,6 +3,8 @@
 # Type hints let you annotate function parameters and return values with
 # expected types. They make code easier to read and help tools catch mistakes.
 
+from typing import Optional
+
 # Section 1: Basic Parameter and Return Type Hints
 
 def add(a: int, b: int) -> int:
@@ -57,7 +59,31 @@ def is_even(number: int) -> bool:
 print(f"4 is even? {is_even(4)}")
 print(f"7 is even? {is_even(7)}")
 
-# Section 5: Practical Exercise
+# Section 5: Optional Types (values that can be None)
+
+# Optional[T] means the value can be either T or None.
+# This is useful for functions that might not find a result.
+def find_user_age(name: str) -> Optional[int]:
+    if name == "Alice":
+        return 25
+    return None
+
+maybe_age = find_user_age("Bob")
+if maybe_age is None:
+    print("Age unknown for Bob")
+else:
+    print(f"Bob's age: {maybe_age}")
+
+# Optional is also useful for optional parameters with a default of None
+def display_name(name: str, nickname: Optional[str] = None) -> str:
+    if nickname:
+        return f"{name} ({nickname})"
+    return name
+
+print(display_name("Charlie"))
+print(display_name("Charlie", nickname="Chaz"))
+
+# Section 6: Practical Exercise
 
 ############
 ## Exercise: Add type hints to these functions and test them
