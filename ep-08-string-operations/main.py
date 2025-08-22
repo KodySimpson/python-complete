@@ -68,38 +68,9 @@ new_sentence = sentence.replace("Java", "Python")
 print("Original:", sentence)
 print("Replaced:", new_sentence)
 
-# Section 4: String Indexing and Slicing
-
-# String indexing (accessing individual characters)
-text = "Python"
-print("Text:", text)
-print("First character:", text[0])
-print("Last character:", text[-1])
-print("Second character:", text[1])
-
-# String slicing (getting substrings)
-print("First 3 characters:", text[0:3])  # or text[:3]
-print("Last 3 characters:", text[-3:])
-print("Characters 1 to 4:", text[1:4])
-print("Every second character:", text[::2])
-
-# Section 5: String Length
+# Section 4: String Length
 
 # Getting string length
 text = "Hello World"
 print("Text:", text)
 print("Length:", len(text))
-
-# Section 6: Splitting and Joining
-
-# Splitting strings
-sentence = "Python is a great programming language"
-words = sentence.split()
-print("Original sentence:", sentence)
-print("Split into words:", words)
-
-# Joining strings
-words = ["Python", "is", "awesome"]
-sentence = " ".join(words)
-print("Words:", words)
-print("Joined sentence:", sentence)
