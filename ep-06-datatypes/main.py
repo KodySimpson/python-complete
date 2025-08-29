@@ -43,3 +43,14 @@ is_true = True
 is_false = False
 print("Boolean True:", is_true)
 print("Type:", type(is_true))
+
+# Section 4: None (no value)
+#
+# None represents the absence of a value. It is its own type: NoneType.
+favorite_food = None # We will need to store my favorite food, but we don't know it yet
+print("None example:", favorite_food)
+print("Type:", type(favorite_food))
+
+favorite_food = "pizza"
+print("Favorite food:", favorite_food)
+print("Type:", type(favorite_food))
