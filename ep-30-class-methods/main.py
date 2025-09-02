@@ -21,3 +21,24 @@ class Student:
     def info(self):
         return f"Name: {self.name}, Age: {self.age}, School: {self.school}"
     
+from datetime import datetime
+
+class User:
+    def __init__(self, username, created_at=None):
+        self.username = username
+        self.created_at = created_at or datetime.now()
+
+    @classmethod
+    def from_string(cls, user_string):
+        """Alternative constructor: create User from 'name:YYYY-MM-DD' string"""
+        username, date_str = user_string.split(":")
+        created_at = datetime.strptime(date_str, "%Y-%m-%d")
+        return cls(username, created_at)
+
+# Instance method usage
+u1 = User("kody")
+print(u1.username, u1.created_at)
+
+# Class method alternative constructor
+u2 = User.from_string("alex:2024-01-15")
+print(u2.username, u2.created_at)

@@ -29,3 +29,11 @@ print(f"Circumference of circle with radius {radius}: {circumference:.2f}")
 distance = 100
 fall_time = (2 * distance / GRAVITY) ** 0.5
 print(f"Time to fall {distance} meters: {fall_time:.2f} seconds")
+
+# Using the Final type hint so that your IDE can tell you that you are not allowed to change the value of the variable
+from typing import Final
+
+PI: Final = 3.14159
+
+# Modern IDEs should complain here if they have type hinting enabled
+PI = 3.141592653589793
