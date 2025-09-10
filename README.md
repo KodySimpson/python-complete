@@ -22,6 +22,6 @@ A comprehensive Python tutorial series covering fundamental programming concepts
 | 16 | While Loops | [`ep-16-while-loops/main.py`](ep-16-while-loops/main.py) |
 | 17 | For Loops | [`ep-17-for-loops/main.py`](ep-17-for-loops/main.py) |
 | 18 | Break and Continue | [`ep-18-break-continue/main.py`](ep-18-break-continue/main.py) |
-| 20 | F-Strings | [`ep-20-f-strings/main.py`](ep-20-f-strings/main.py) |
+| 19 | F-Strings | [`ep-19-f-strings/main.py`](ep-19-f-strings/main.py) |
 
 More to be added as new episodes are released.

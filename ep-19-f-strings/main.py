@@ -1,4 +1,4 @@
-# Episode 20: F-Strings in Python
+# Episode 19: F-Strings in Python
 
 ## F-Strings: Formatted String Literals
 
