@@ -1,4 +1,4 @@
-# Episode 16: For Loops in Python
+# Episode 17: For Loops in Python
 
 # For loops are used to iterate over sequences (like lists, strings, or ranges).
 # They're great when you know how many times you want to repeat something.

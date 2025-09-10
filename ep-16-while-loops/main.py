@@ -1,4 +1,4 @@
-# Episode 15: While Loops in Python
+# Episode 16: While Loops in Python
 
 # Loops are a way to repeat code.
 # While loops are a type of loop that will continue to run as long as a condition is true.
