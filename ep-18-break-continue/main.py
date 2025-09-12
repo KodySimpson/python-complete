@@ -1,4 +1,4 @@
-# Episode 17: Break and Continue in Python
+# Episode 18: Break and Continue in Python
 
 # Break and continue are control statements that help you control the flow of loops.
 # They work with both while loops and for loops.
