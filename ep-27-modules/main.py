@@ -21,6 +21,7 @@
 import calculator
 
 print("=== Method 1: Import Entire Module ===")
+print(calculator.PI)
 print("5 + 3 =", calculator.add(5, 3))
 print("10 - 4 =", calculator.subtract(10, 4))
 print("6 * 7 =", calculator.multiply(6, 7))
