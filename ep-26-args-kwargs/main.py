@@ -38,7 +38,7 @@ print(f"Sum of no arguments: {result4}")
 def greet_and_sum(greeting, *numbers):
     print(f"{greeting}")
     if numbers:
-        total = sum(numbers)
+        total = sum(*numbers)
         print(f"Sum of numbers: {total}")
     else:
         print("No numbers provided")

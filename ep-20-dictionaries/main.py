@@ -1,4 +1,4 @@
-# Episode 21: Dictionaries in Python
+# Episode 20: Dictionaries in Python
 
 # Dictionaries are collections of key-value pairs.
 # Unlike lists which use indices, dictionaries use keys to access values.

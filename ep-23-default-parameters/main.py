@@ -1,4 +1,4 @@
-# Episode 20: Default Parameters in Python
+# Episode 23: Default Parameters in Python
 
 # Default parameters allow you to make some arguments optional in your functions.
 # If a parameter has a default value, you don't have to provide it when calling the function.

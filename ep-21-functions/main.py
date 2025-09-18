@@ -1,4 +1,4 @@
-# Episode 18: Functions in Python
+# Episode 21: Functions in Python
 
 # Functions are blocks of reusable code that perform a specific task.
 # They help organize your code and avoid repeating the same code multiple times.

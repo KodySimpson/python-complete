@@ -71,44 +71,6 @@ create_user_profile("Charlie", 35, occupation="Engineer")  # Skip city with keyw
 create_user_profile("Diana", 28, "Seattle", "Designer", True)  # All arguments
 create_user_profile("Eve", 22, is_verified=True)  # Skip occupation with keyword
 
-# Section 5: Practical Examples
-
-# Function for calculating shipping costs
-def calculate_shipping(weight, distance, priority=False, insurance=False):
-    base_cost = weight * 0.5 + distance * 0.1
-    
-    if priority:
-        base_cost *= 1.5
-    
-    if insurance:
-        base_cost += 10
-    
-    print(f"Shipping cost: ${base_cost:.2f}")
-    return base_cost
-
-# Different ways to calculate shipping
-print("\nShipping calculations:")
-calculate_shipping(5, 100)  # Basic shipping
-calculate_shipping(5, 100, True)  # With priority
-calculate_shipping(5, 100, insurance=True)  # With insurance
-calculate_shipping(5, 100, priority=True, insurance=True)  # Both extras
-
-# Function for formatting text with options
-def format_document(title, content, font_size=12, bold=False, italic=False, color="black"):
-    print(f"Document: {title}")
-    print(f"Content: {content}")
-    print(f"Font size: {font_size}")
-    print(f"Bold: {bold}")
-    print(f"Italic: {italic}")
-    print(f"Color: {color}")
-    print("---")
-
-# Different formatting options
-print("\nDocument formatting:")
-format_document("My Report", "This is the content of my report.")
-format_document("Important Notice", "This is important!", bold=True, color="red")
-format_document("Italic Text", "This is italic text.", italic=True, font_size=14)
-
 # Section 6: Advanced Examples
 
 # Function that demonstrates the flexibility of mixed arguments
