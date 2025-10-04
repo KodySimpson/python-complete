@@ -34,5 +34,10 @@ A comprehensive Python tutorial series covering fundamental programming concepts
 | 28 | Variable Scope | [`ep-28-variable-scope/main.py`](ep-28-variable-scope/main.py) |
 | 29 | Math Module | [`ep-29-math-module/main.py`](ep-29-math-module/main.py) |
 | 30 | Modules | [`ep-30-modules/main.py`](ep-30-modules/main.py) |
+| 31 | Static Methods | [`ep-31-static-methods/main.py`](ep-31-static-methods/main.py) |
+| 32 | Properties | [`ep-32-properties/main.py`](ep-32-properties/main.py) |
+| 33 | Inheritance | [`ep-33-inheritance/main.py`](ep-33-inheritance/main.py) |
+| 34 | Exceptions (Basics) | [`ep-34-exceptions/main.py`](ep-34-exceptions/main.py) |
+| 35 | Raising & Custom Exceptions | [`ep-35-raising-custom-exceptions/main.py`](ep-35-raising-custom-exceptions/main.py) |
 
 More to be added as new episodes are released.
