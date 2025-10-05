@@ -1,5 +1,5 @@
 """
-Episode 35: Raising & Custom Exceptions
+Episode 36: Raising & Custom Exceptions
 
 In this episode you'll learn:
 - How and when to raise exceptions
@@ -149,4 +149,3 @@ if __name__ == "__main__":
     print("1) Add a MinimumBalanceError; prevent balance dropping below a threshold.")
     print("2) Create a transfer(acct_from, acct_to, amount) that raises and rolls back on failure.")
     print("3) Add a parse_currency('$12.34') helper that strips symbols and uses chaining.")
-

@@ -82,44 +82,7 @@ def safe_get(mapping: dict, key, default=None):
 
 
 # ------------------------------------------------------------
-# 5) finally for cleanup (always runs)
-# ------------------------------------------------------------
-def demo_finally():
-    """Demonstrate real cleanup: ensure a file is closed and removed.
-
-    In real programs, finally is used to release resources you acquired in try,
-    like files, sockets, locks, or temporary state.
-    """
-    import os
-
-    path = "demo_finally_output.txt"
-    f = None
-    print("Opening file and writing...")
-    try:
-        f = open(path, "w")
-        f.write("Hello from demo_finally()!\n")
-        print("File written. Now simulating an error...")
-        # Simulate an error after acquiring the resource
-        raise RuntimeError("something went wrong after writing")
-    except RuntimeError as e:
-        print("Handled runtime error:", e)
-    finally:
-        # Always close the file if it was opened
-        if f and not f.closed:
-            f.close()
-            print("File closed.")
-        # Clean up the temporary file if it exists
-        try:
-            if os.path.exists(path):
-                os.remove(path)
-                print(f"Deleted temporary file: {path}")
-        except Exception as cleanup_err:
-            print("Warning: could not remove temporary file:", cleanup_err)
-        print("Cleanup complete (finally always runs)\n")
-
-
-# ------------------------------------------------------------
-# 6) Using else for success-only code
+# 5) Using else for success-only code
 # ------------------------------------------------------------
 def safe_divide_with_else(a, b):
     """Same behavior as safe_divide, but uses an else block.
@@ -142,7 +105,7 @@ def safe_divide_with_else(a, b):
 
 
 # ------------------------------------------------------------
-# 7) Common mistakes to avoid
+# 6) Common mistakes to avoid
 # ------------------------------------------------------------
 # - Avoid bare `except:`; it catches KeyboardInterrupt/SystemExit too.
 # - Catch the narrowest exception types you expect.
@@ -150,7 +113,7 @@ def safe_divide_with_else(a, b):
 
 
 # ------------------------------------------------------------
-# 8) Demo / Walkthrough
+# 7) Demo / Walkthrough
 # ------------------------------------------------------------
 if __name__ == "__main__":
     print("=== Exceptions: Basics ===")
@@ -171,16 +134,13 @@ if __name__ == "__main__":
     print("age:", safe_get(data, "age", default="unknown"))
     print()
 
-    print("-- finally example --")
-    demo_finally()
-
     print("-- else example --")
     safe_divide_with_else(9, 3)
     safe_divide_with_else(5, 0)
 
     print("=== Key Takeaways ===")
     print("- Use try/except to handle specific error types you expect.")
-    print("- Put success-only code in else; cleanup in finally.")
+    print("- Put success-only code in else.")
     print("- Prefer precise exceptions over bare except.")
 
     print("\n=== Try it yourself ===")
